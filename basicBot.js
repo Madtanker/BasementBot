@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Madtanker/BasementBot/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/Madtanker/BasementBot/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -183,9 +183,9 @@
         status: false,
         name: "BasementCouch",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Madtanker/BasementBot/master/basicBot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/Madtanker/BasementBot/basicBot.js",
         cmdLink: "http://git.io/pUGW",
-        chatLink: "https://rawgit.com/Madtanker/BasementBot/master/lang/en.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/Madtanker/BasementBot/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "BasementCouch",
             language: "english",
-            chatLink: "https://rawgit.com/Madtanker/BasementBot/master/lang/en.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/Madtanker/BasementBot/lang/en.json",
             startupCap: 200, // 1-200
             startupVolume: 25, // 0-100
             startupEmoji: true, // true or false
@@ -278,7 +278,7 @@
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Madtanker/BasementBot/master/blacklists/Banlist.json"
+                OP: "https://cdn.jsdelivr.net/gh/Madtanker/BasementBot/blacklists/Banlist.json"
             }
         },
         room: {
